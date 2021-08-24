@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-size: 2rem;
+  background: url("https://images.unsplash.com/photo-1592392513912-fd639ff32e98?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1417&q=80");
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+nav {
+  width: 30rem;
+  height: 100vh;
+  background: rgb(138, 192, 174);
+  position: fixed;
+  top: 0;
+  right: -30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.change {
+  right: 0;
+}
+.menus li a {
+  color: #fff;
+}
+.menus li {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 3rem;
+}
+.hamburger {
+  width: 4rem;
+  height: 3.5rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.line {
+  background: #fc427b;
+  width: 100%;
+  transition: all 0.8s;
+  height: 0.3rem;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+.change .line-1 {
+  transform: rotateZ(-45deg) translate(8px, -6px);
+  -webkit-transform: rotateZ(-45deg) translate(-12px, -6px);
+  -moz-transform: rotateZ(-45deg) translate(8px, -6px);
+  -ms-transform: rotateZ(-45deg) translate(8px, -6px);
+  -o-transform: rotateZ(-45deg) translate(8px, -6px);
+}
+.change .line-2 {
+  opacity: 0;
+}
+.change .line-3 {
+  transform: rotateZ(45deg) translate(-8px, -6px);
+  -webkit-transform: rotateZ(45deg) translate(-21px, -6px);
+  -moz-transform: rotateZ(45deg) translate(-8px, -6px);
+  -ms-transform: rotateZ(45deg) translate(-8px, -6px);
+  -o-transform: rotateZ(45deg) translate(-8px, -6px);
+}
