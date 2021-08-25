@@ -14,5 +14,4 @@ myFakeImg.addEventListener("mousemove", function (e) {
 
 myFakeImg.addEventListener("mouseout", function () {
   mainImg.style.visibility = "hidden";
-  track.style.display = "none";
 });
